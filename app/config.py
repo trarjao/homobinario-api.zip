@@ -39,7 +39,7 @@ class Settings:
 
     def __init__(self) -> None:
         self.gemini_api_key: str = os.getenv("GEMINI_API_KEY", "").strip()
-        self.gemini_model: str = os.getenv("GEMINI_MODEL", "gemini-1.5-flash").strip()
+        self.gemini_model: str = os.getenv("GEMINI_MODEL", "gemini-3.8-flash").strip()
 
         self.docs_dir: Path = _path("HOMOBINARIO_DOCS_DIR", BASE_DIR / "docs")
         self.data_dir: Path = _path("HOMOBINARIO_DATA_DIR", BASE_DIR / "data")
